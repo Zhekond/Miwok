@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/list_item_height"
+    android:gravity="center_vertical"
+
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background">
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/listImage"/>
+
+<LinearLayout
+    android:id="@+id/listId"
+
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:background="@color/category_numbers"
+    android:layout_toEndOf="@+id/listImage"
+    android:layout_toRightOf="@+id/listImage">
+
+
+    <TextView
+        android:id="@+id/miwId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="bottom"
+        />
+
+    <TextView
+        android:id="@+id/defId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:gravity="top"
+        android:layout_weight="1"
+ />
+</LinearLayout>
+    <ImageView
+        android:id="@+id/playbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_arrow_white_24dp"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>
